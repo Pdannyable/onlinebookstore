@@ -19,6 +19,21 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 	
+	<distributionManagement>
+	    <repository>
+	      <id>nexus</id>
+	      <name>Upwind Concept Releases Nexus Repository</name>
+	      <url>http://35.172.226.23:8181/upwindconcept/repository/onlinebook-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Upwind Concept Snapshot Nexus Repository </name>
+	      <url>http://35.172.226.23:8181/upwindconcept/repository/onlinebook-snapshots/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
+	
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
 		<finalName>onlinebookstore</finalName>
